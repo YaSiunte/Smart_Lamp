@@ -2,12 +2,6 @@
 
 Projeto de Check Point 4 da disciplina de Edge Computing (FIAP), utilizando o **FIWARE Descomplicado** como back-end de uma solução de lâmpada inteligente (Smart Lamp), baseada em ESP32.
 
-## Autores
-
-- Fábio Henrique Cabrini (código original)
-- Lucas Demetrius Augusto (leitura de luminosidade)
-- **Yasmin Siunte Gregório** (adaptação do projeto: LED RGB, ajustes de tópicos e integração com FIWARE na AWS)
-
 ## Descrição
 
 O projeto simula/implementa uma lâmpada inteligente com:
@@ -67,5 +61,5 @@ IoT Agent (UltraLight) ---> Orion Context Broker (FIWARE)
 
 ## Links
 
-- Simulação Wokwi: _[cole aqui o link do seu projeto]_
-- Vídeo demonstrativo: _[cole aqui o link do vídeo]_
+- Simulação Wokwi: https://wokwi.com/projects/475462423486770177
+- Vídeo demonstrativo: https://youtube.com/shorts/xzs3gjGSRzM?feature=share
