@@ -1,0 +1,35 @@
+{
+  "version": 1,
+  "author": "Yasmin Siunte Gregório",
+  "editor": "wokwi",
+  "parts": [
+    { "type": "wokwi-esp32-devkit-v1", "id": "esp", "top": 4.7, "left": 4.6, "attrs": {} },
+    {
+      "type": "wokwi-photoresistor-sensor",
+      "id": "ldr1",
+      "top": 47.7,
+      "left": -159.1,
+      "rotate": 90,
+      "attrs": { "common": "cathode" }
+    },
+    {
+      "type": "wokwi-rgb-led",
+      "id": "rgb1",
+      "top": -130.4,
+      "left": 29.9,
+      "attrs": { "common": "cathode" }
+    }
+  ],
+  "connections": [
+    [ "esp:TX0", "$serialMonitor:RX", "", [] ],
+    [ "esp:RX0", "$serialMonitor:TX", "", [] ],
+    [ "ldr1:AO", "esp:D34", "green", [ "v28.8", "h77.5", "v-134.2" ] ],
+    [ "ldr1:VCC", "esp:3V3", "red", [ "v57.6", "h182.4", "v-57.6" ] ],
+    [ "ldr1:GND", "esp:GND.1", "black", [ "v67.2", "h202", "v-76.7" ] ],
+    [ "esp:GND.2", "rgb1:COM", "black", [ "h-38.4", "v-182.5", "h76.8" ] ],
+    [ "esp:D18", "rgb1:B", "blue", [ "h28.5", "v-144", "h-9.6" ] ],
+    [ "esp:D5", "rgb1:G", "purple", [ "h18.9", "v-134.4", "h-67.2" ] ],
+    [ "esp:D32", "rgb1:R", "gold", [ "h-28.8", "v-124.9", "h48" ] ]
+  ],
+  "dependencies": {}
+}
